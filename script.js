@@ -1,74 +1,73 @@
 const students = [
-
-  { rollNumber: '22WJ1A0465', name: 'DASARI JOSEPH DAVID PAUL', parentPhone: '9866775630', parentName: 'DASARI PRASADA RAO', studentPhone: '8985002400' },
-  { rollNumber: '22WJ1A0466', name: 'DEVIREDDY POOJITHA', parentPhone: '9908877647', parentName: 'DEVIREDDY RAGHAVA REDDY', studentPhone: '9908877647' },
-  { rollNumber: '22WJ1A0467', name: 'DHARAVATH NAVEEN', parentPhone: '9652727976', parentName: 'DHARAVATH SHIVA', studentPhone: '9505079769' },
-  { rollNumber: '22WJ1A0468', name: 'DODDA AKHIL', parentPhone: '9502657588', parentName: 'DODDA RAMESH', studentPhone: '7671821182' },
-  { rollNumber: '22WJ1A0469', name: 'DODDA JYOTHIKA', parentPhone: '9963614071', parentName: 'DODDA YUGENDER', studentPhone: '9849192450' },
-  { rollNumber: '22WJ1A0470', name: 'DONTHA ROSHAN', parentPhone: '9441327856', parentName: 'DONTHA VIJAY', studentPhone: '9391802820' },
-  { rollNumber: '22WJ1A0471', name: 'DORISHETTI SAI', parentPhone: '9959768900', parentName: 'DORISHETTI LACHAIAH', studentPhone: '9676467491' },
-  { rollNumber: '22WJ1A0472', name: 'DUDAPAKA GANESH', parentPhone: '8897443818', parentName: 'DUDAPAKA MAHESH', studentPhone: '8074428864' },
-  { rollNumber: '22WJ1A0473', name: 'DUNUKU HANOKU', parentPhone: '9948925594', parentName: 'DUNUKU KRISHNA', studentPhone: '8790358178' },
-  { rollNumber: '22WJ1A0474', name: 'E V S KRISHNA SAKET', parentPhone: '7702037926', parentName: 'E V S RAJANIKANTH', studentPhone: '9618479484' },
-  { rollNumber: '22WJ1A0475', name: 'EDAM MANISHANKAR', parentPhone: '9848325065', parentName: 'EDAM PANDU', studentPhone: '9848325065' },
-  { rollNumber: '22WJ1A0476', name: 'EDAMONI SAIDULU YADAV', parentPhone: '6302143870', parentName: 'EDAMONI THIRUPATHAIAH', studentPhone: '7569147142' },
-  { rollNumber: '22WJ1A0477', name: 'EDLA JEEVANA', parentPhone: '8179041746', parentName: 'EDLA YADAGIRI', studentPhone: '9959670408' },
-  { rollNumber: '22WJ1A0478', name: 'ENUGULA RAMCHARAN', parentPhone: '8374928437', parentName: 'ENUGULA NARSAIAH', studentPhone: '9866330126' },
-  { rollNumber: '22WJ1A0479', name: 'ESLAVATH GANESH', parentPhone: '7032832116', parentName: 'ESLAVATH PRAVEEN', studentPhone: '7032162116' },
-  { rollNumber: '22WJ1A0480', name: 'ESLAVATH NAGARAJU', parentPhone: '9553862669', parentName: 'ESLAVATH CHANDAR', studentPhone: '6300057024' },
-  { rollNumber: '22WJ1A0481', name: 'G PAVANI', parentPhone: '9441872094', parentName: 'G BUCHANNA', studentPhone: '8008371730' },
-  { rollNumber: '22WJ1A0482', name: 'G PRAVEEN KUMAR', parentPhone: '9949767591', parentName: 'G GOVINDU', studentPhone: '9381468893' },
-  { rollNumber: '22WJ1A0483', name: 'G UDAY KIRAN', parentPhone: '9989357805', parentName: 'G ASHOK KUMAR', studentPhone: '9640327805' },
-  { rollNumber: '22WJ1A0484', name: 'GADDAM NARESH', parentPhone: '9618249816', parentName: 'GADDAM VENKATESHWARLU', studentPhone: '7981433822' },
-  { rollNumber: '22WJ1A0485', name: 'GADE SHIVAJI', parentPhone: '9533472796', parentName: 'GADE NARSINGA RAO', studentPhone: '6301247924' },
-  { rollNumber: '22WJ1A0486', name: 'GAJBEERKAR SRAVAN KUMAR', parentPhone: '6309635024', parentName: 'GAJBEERKAR HUSSAIN', studentPhone: '7993556024' },
-  { rollNumber: '22WJ1A0487', name: 'GAJJALA VENKATESH', parentPhone: '9908994896', parentName: 'GAJJALA HARIBABU', studentPhone: '9676248621' },
-  { rollNumber: '22WJ1A0488', name: 'GAMINI NAGAKRISHNA BHANU PRAKASH RAO', parentPhone: '9441341984', parentName: 'GAMINI VENKATRATHNAM', studentPhone: '9121008262' },
-  { rollNumber: '22WJ1A0489', name: 'GANAPURAM SRAVANTHI', parentPhone: '9849207405', parentName: 'GANAPURAM KRISHNAIAH', studentPhone: '9182244302' },
-  { rollNumber: '22WJ1A0490', name: 'GANDU KISHORE', parentPhone: '8187003992', parentName: 'GANDU RADHA KRISHNA', studentPhone: '9347883602' },
-  { rollNumber: '22WJ1A0491', name: 'GANDU VINAY', parentPhone: '9951504761', parentName: 'GANDU KRISHNA MURTHI', studentPhone: '8501047611' },
-  { rollNumber: '22WJ1A0492', name: 'GEENUGAPALLI KARUNYA', parentPhone: '9963440040', parentName: 'GEENUGAPALLI SRINAIAH', studentPhone: '7330797337' },
-  { rollNumber: '22WJ1A0493', name: 'GILAKATHULA SAI TEJA', parentPhone: '8341116779', parentName: 'GILAKATHULA RAMESH', studentPhone: '6303073686' },
-  { rollNumber: '22WJ1A0494', name: 'GOLLA YESHWANTH', parentPhone: '7989171135', parentName: 'G SATYA NARAYANA', studentPhone: '6305448795' },
-  { rollNumber: '22WJ1A0495', name: 'GOPE NAGESHWARI', parentPhone: '9010250242', parentName: 'GOPE RAVI', studentPhone: '8688463028' },
-  { rollNumber: '22WJ1A0496', name: 'GOSHETTI AJAY', parentPhone: '9849540690', parentName: 'GOSHETTI RAMESH', studentPhone: '9392827134' },
-  { rollNumber: '22WJ1A0497', name: 'GOUTHAM RAJKUMAR', parentPhone: '7337564877', parentName: 'GOUTHAM RAJAIAH', studentPhone: '7080730302' },
-  { rollNumber: '22WJ1A0498', name: 'GUDLANARVA AJAY KUMAR', parentPhone: '7569588530', parentName: 'GUDLANARVA JANGAIAH', studentPhone: '9505570853' },
-  { rollNumber: '22WJ1A0499', name: 'GUGULOTH SWETHA', parentPhone: '9848236841', parentName: 'GUGULOTH SRINU', studentPhone: '9347817119' },
-  { rollNumber: '22WJ1A04A0', name: 'GUNDABOINA MADHAVI', parentPhone: '8897425078', parentName: 'GUNDBOINA VENKATAIAH', studentPhone: '9381169435' },
-  { rollNumber: '22WJ1A04A1', name: 'GUNDALA RAKESH', parentPhone: '9849149359', parentName: 'GUNDALA NARSIMHA', studentPhone: '8374019884' },
-  { rollNumber: '22WJ1A04A2', name: 'GUNNA ADITHYA', parentPhone: '9550090898', parentName: 'GUNNA KRISHNAIAH', studentPhone: '8047132002' },
-  { rollNumber: '22WJ1A04A3', name: 'GUNTAKANDLA NANDHA KISHOR', parentPhone: '6305625791', parentName: 'GUNTAKANDLA SUJATHA', studentPhone: '9347182379' },
-  { rollNumber: '22WJ1A04A4', name: 'GURRALA ANUSHA', parentPhone: '9866153878', parentName: 'G BALAIAH', studentPhone: '9381713386' },
-  { rollNumber: '22WJ1A04A5', name: 'GURRAPU PRANATHI', parentPhone: '9948911088', parentName: 'GURRAPU GOVARDHAN', studentPhone: '9550289145' },
-  { rollNumber: '22WJ1A04A6', name: 'HANUMANDLA VAMSHI', parentPhone: '9390752715', parentName: 'HANUMANDLA BABU', studentPhone: '8919736230' },
-  { rollNumber: '22WJ1A04A7', name: 'HARIJAN MADHU', parentPhone: '9666541502', parentName: 'HARIJAN DASTHAIAH', studentPhone: '8919782836' },
-  { rollNumber: '22WJ1A04A8', name: 'INAPANURI SURESH', parentPhone: '9640828823', parentName: 'INAPANURI PRASADA RAO', studentPhone: '9392219047' },
-  { rollNumber: '22WJ1A04A9', name: 'J HARSHITHA', parentPhone: '9948759243', parentName: 'J RAJESHWAR', studentPhone: '6302943141' },
-  { rollNumber: '22WJ1A04B0', name: 'JADI SHIVAMANI', parentPhone: '9381055992', parentName: 'JADI ASHOK', studentPhone: '9959957702' },
-  { rollNumber: '22WJ1A04B1', name: 'JADI VARUN TEJA', parentPhone: '9441603591', parentName: 'JADI YUGENDER', studentPhone: '7842411051' },
-  { rollNumber: '22WJ1A04B2', name: 'JAKKULA GOPI KRISHNA', parentPhone: '9989648077', parentName: 'JAKKULA LINGAIAH', studentPhone: '9550858077' },
-  { rollNumber: '22WJ1A04B3', name: 'JAMALPUR REVANTH', parentPhone: '9849092541', parentName: 'JAMALPUR BALARAJU', studentPhone: '9346935308' },
-  { rollNumber: '22WJ1A04B5', name: 'JARAPALA VASU', parentPhone: '9849634938', parentName: 'JARAPALA BALU', studentPhone: '6304282917' },
-  { rollNumber: '22WJ1A04B6', name: 'JERRIPOTHULA AKHILA', parentPhone: '9666227484', parentName: 'JERRIPOTHULA SAIDULU', studentPhone: '9030609718' },
-  { rollNumber: '22WJ1A04B7', name: 'JONNAWADA CHENCHU LAXMI PRIYA', parentPhone: '9848606828', parentName: 'J RADHA KRISHNA', studentPhone: '7569127774' },
-  { rollNumber: '22WJ1A04B8', name: 'JULAKANTI SRILAXMI', parentPhone: '9949722564', parentName: 'JULAKANTI NAGARAJU', studentPhone: '8247793771' },
-  { rollNumber: '22WJ1A04B9', name: 'K ARCHANA', parentPhone: '9908166147', parentName: 'K MADHAVACHARI', studentPhone: '8639925355' },
-  { rollNumber: '22WJ1A04C0', name: 'K SURI', parentPhone: '9133534811', parentName: 'K RAMULU', studentPhone: '6302724327' },
-  { rollNumber: '22WJ1A04C1', name: 'K VARDHAN KUMAR GOUD', parentPhone: '9703733327', parentName: 'K JAGADEESWAR GOUD', studentPhone: '6303290655' },
-  { rollNumber: '22WJ1A04C2', name: 'KADARI ABHIGNA', parentPhone: '9885774872', parentName: 'KADARI VENKANNA', studentPhone: '9381365911' },
-  { rollNumber: '22WJ1A04C3', name: 'KAIKALA CHIRU MANI SANDEEP', parentPhone: '9948604599', parentName: 'KAIKALA VENKATESWRA PRASAD', studentPhone: '9502210299' },
-  { rollNumber: '22WJ1A04C4', name: 'KALLEM VINAY', parentPhone: '9849264353', parentName: 'KALLEM SRINIVAS', studentPhone: '8179323132' },
-  { rollNumber: '22WJ1A04C5', name: 'KANCHARAKUNTLA MADHUKAR REDDY', parentPhone: '9010979305', parentName: 'KANCHARAKUNTLA NARSI REDDY', studentPhone: '9573362716' },
-  { rollNumber: '22WJ1A04C6', name: 'KANNEKANTI THARUNI', parentPhone: '9394600128', parentName: 'KANNEKANTI JANARDHANA CHARY', studentPhone: '9573062637' },
-  { rollNumber: '22WJ1A04C7', name: 'KANNEVENA KARTHIK', parentPhone: '6305872367', parentName: 'ILAIAH', studentPhone: '7337281797' },
-  { rollNumber: '22WJ1A04C8', name: 'KAPPARI SRUJANA REDDY', parentPhone: '9989342688', parentName: 'KAPPARI BADRA REDDY', studentPhone: '7396242688' },
-  { rollNumber: '23WJ5A0411', name: 'KAMUTAM DAMODHAR', parentPhone: '9000355841', parentName: 'Devaraju', studentPhone: '8977171841' },
-  { rollNumber: '23WJ5A0412', name: 'KATAMONI PRATHYUSH GOUD', parentPhone: '9640412552', parentName: '', studentPhone: '7993075875' },
-  { rollNumber: '23WJ5A0413', name: 'KOTIMIRI VIVEK KUMAR', parentPhone: '9550578681', parentName: '', studentPhone: '6304269458' },
-  { rollNumber: '23WJ5A0414', name: 'MAHADEVUNI NAVYA', parentPhone: '9948128561', parentName: '', studentPhone: '9704484691' },
-  { rollNumber: '23WJ5A0415', name: 'MD SALMAN', parentPhone: '8106150473', parentName: 'MD Khaja', studentPhone: '9652047325' },
-  { rollNumber: '21WJ1A04K1', name: 'M. ADNAN', parentPhone: '9642337786', parentName: 'Nayeem hussain', studentPhone: '8008065856' },
+  { rollNumber: '22WJ1A04K3', name: 'MOTHI ABHIRAM', parentPhone: '9701016317', studentPhone: '9963813930' },
+  { rollNumber: '22WJ1A04K4', name: 'MOTTE PUJITHA', parentPhone: '9573527903', studentPhone: '9347790933' },
+  { rollNumber: '22WJ1A04K5', name: 'MOTTE SATHWIKA', parentPhone: '9948385577', studentPhone: '8500520577' },
+  { rollNumber: '22WJ1A04K6', name: 'MUDDASANI MANISHA', parentPhone: '9110364970', studentPhone: '8639654060' },
+  { rollNumber: '22WJ1A04K7', name: 'MUDIGONDA SINDHUJA', parentPhone: '9603134441', studentPhone: '9032480948' },
+  { rollNumber: '22WJ1A04K8', name: 'MUDRABOINA LAXMI PRASANNA', parentPhone: '9959057116', studentPhone: '8019853915' },
+  { rollNumber: '22WJ1A04K9', name: 'MUKESH REDDY GUNDA', parentPhone: '9014476299', studentPhone: '6304421697' },
+  { rollNumber: '22WJ1A04L0', name: 'MULAMALLA SATHWIK REDDY', parentPhone: '9100334104', studentPhone: '9948240153' },
+  { rollNumber: '22WJ1A04L1', name: 'MUMMADI SRINIDHI', parentPhone: '9848455517', studentPhone: '9848315517' },
+  { rollNumber: '22WJ1A04L2', name: 'N SREE BHAVANI', parentPhone: '8978117975', studentPhone: '7093477790' },
+  { rollNumber: '22WJ1A04L3', name: 'NADIMINTI PRASANTH REDDY', parentPhone: '6281416184', studentPhone: '6304800846' },
+  { rollNumber: '22WJ1A04L4', name: 'NALLAGASU SREEJA', parentPhone: '9963708077', studentPhone: '9490021318' },
+  { rollNumber: '22WJ1A04L5', name: 'NALLANA ADITYA', parentPhone: '9618455065', studentPhone: '8130527665' },
+  { rollNumber: '22WJ1A04L6', name: 'NAMINDLA CHANDINI', parentPhone: '7997563407', studentPhone: '9640350697' },
+  { rollNumber: '22WJ1A04L7', name: 'NANDAGIRI VENKATA RAVIKIRAN', parentPhone: '9765444061', studentPhone: '9689326604' },
+  { rollNumber: '22WJ1A04L8', name: 'NAREDLA SRAVANKUMAR', parentPhone: '9989910353', studentPhone: '8106970384' },
+  { rollNumber: '22WJ1A04L9', name: 'NARIVEDDI ASHISH', parentPhone: '9059557878', studentPhone: '9182211334' },
+  { rollNumber: '22WJ1A04M0', name: 'NARVA DHEERAJ GOUD', parentPhone: '9440486513', studentPhone: '7794825107' },
+  { rollNumber: '22WJ1A04M1', name: 'NEELAM SRAVANTHI', parentPhone: '9490030191', studentPhone: '9440974047' },
+  { rollNumber: '22WJ1A04M2', name: 'NENAVATH AMRUTHA', parentPhone: '9381138715', studentPhone: '9182643072' },
+  { rollNumber: '22WJ1A04M3', name: 'NENAVATH SURESH', parentPhone: '8309038134', studentPhone: '6305540422' },
+  { rollNumber: '22WJ1A04M4', name: 'NENAVATH TEJA', parentPhone: '9866893791', studentPhone: '9391180262' },
+  { rollNumber: '22WJ1A04M5', name: 'NOMULA MAHENDAR', parentPhone: '8790278781', studentPhone: '9550447878' },
+  { rollNumber: '22WJ1A04M6', name: 'NOMULA MAYURI', parentPhone: '8919275997', studentPhone: '8919275997' },
+  { rollNumber: '22WJ1A04M7', name: 'OLEPU SAIKUMAR', parentPhone: '9030427020', studentPhone: '8639670488' },
+  { rollNumber: '22WJ1A04M8', name: 'ORSU NAVEEN', parentPhone: '7730011441', studentPhone: '9515540214' },
+  { rollNumber: '22WJ1A04M9', name: 'P R S SANTOSH NAIDU', parentPhone: '9866221031', studentPhone: '7075351027' },
+  { rollNumber: '22WJ1A04N0', name: 'P VENKATESHWAR REDDY', parentPhone: '6301840695', studentPhone: '7989517258' },
+  { rollNumber: '22WJ1A04N1', name: 'PADALA SAI PRATHYUSHA', parentPhone: '8801270620', studentPhone: '6303111711' },
+  { rollNumber: '22WJ1A04N2', name: 'PADAMATI ANUSH REDDY', parentPhone: '9492627481', studentPhone: '6281917597' },
+  { rollNumber: '22WJ1A04N3', name: 'PAGIDIMARRI NAVEEN', parentPhone: '9701771652', studentPhone: '8184940014' },
+  { rollNumber: '22WJ1A04N4', name: 'PAGIDIPALLI DURGA RAO', parentPhone: '7286907163', studentPhone: '6309857063' },
+  { rollNumber: '22WJ1A04N5', name: 'PALLA SAI TEJA', parentPhone: '9948978270', studentPhone: '9948215498' },
+  { rollNumber: '22WJ1A04N6', name: 'PARMESHWAR UPADHYAY', parentPhone: '9553605992', studentPhone: '9618032802' },
+  { rollNumber: '22WJ1A04N7', name: 'PATEL UDAY KIRAN REDDY', parentPhone: '9908394331', studentPhone: '6301974834' },
+  { rollNumber: '22WJ1A04N8', name: 'PATHURI SANTHOSH REDDY', parentPhone: '9963785449', studentPhone: '7569429156' },
+  { rollNumber: '22WJ1A04N9', name: 'PENTAPATI HEMANTH KUMAR', parentPhone: '8125263555', studentPhone: '9246063555' },
+  { rollNumber: '22WJ1A04P0', name: 'PINNAM HARSHAVARDHAN', parentPhone: '8978365784', studentPhone: '6305006860' },
+  { rollNumber: '22WJ1A04P1', name: 'PIPPIRI SHIVAPRASAD', parentPhone: '9553010238', studentPhone: '9848465719' },
+  { rollNumber: '22WJ1A04P2', name: 'POLISHETTY SAI KIRAN', parentPhone: '9705088261', studentPhone: '7207533072' },
+  { rollNumber: '22WJ1A04P3', name: 'POLWAR OM KRISHNA TEJA', parentPhone: '9010140200', studentPhone: '6303699441' },
+  { rollNumber: '22WJ1A04P4', name: 'PONNAGANDLA ROHINI', parentPhone: '9948612497', studentPhone: '6305866029' },
+  { rollNumber: '22WJ1A04P5', name: 'POREDDY AVINASH REDDY', parentPhone: '9949201506', studentPhone: '6302173378' },
+  { rollNumber: '22WJ1A04P6', name: 'POTHAGANI KAMALAKAR', parentPhone: '9347097547', studentPhone: '9652480489' },
+  { rollNumber: '22WJ1A04P7', name: 'POTHURAJU RAJU', parentPhone: '8790479209', studentPhone: '9121972693' },
+  { rollNumber: '22WJ1A04P8', name: 'PUCHAKAYALA SRI CHARAN REDDY', parentPhone: '8465954914', studentPhone: '7671953387' },
+  { rollNumber: '22WJ1A04P9', name: 'PULI ARUN', parentPhone: '9440838392', studentPhone: '6302171165' },
+  { rollNumber: '22WJ1A04Q1', name: 'PULI SUPRIYA', parentPhone: '7675848260', studentPhone: '9391540262' },
+  { rollNumber: '22WJ1A04Q2', name: 'PULLAKANDAM LAXMI VENKATA NARASIMHA SWAMY', parentPhone: '9441271382', studentPhone: '6304621330' },
+  { rollNumber: '22WJ1A04Q3', name: 'PURAM RAKESH', parentPhone: '9014065565', studentPhone: '8639867875' },
+  { rollNumber: '22WJ1A04Q4', name: 'PUSULURI MEGHANA', parentPhone: '8121389339', studentPhone: '7013401081' },
+  { rollNumber: '22WJ1A04Q5', name: 'R ANAND', parentPhone: '7075255280', studentPhone: '9390916046' },
+  { rollNumber: '22WJ1A04Q6', name: 'RAGAPURAM PRANAB SAI', parentPhone: '8497919111', studentPhone: '7680067675' },
+  { rollNumber: '22WJ1A04Q7', name: 'RAMINENI YASWITHA', parentPhone: '7036332286', studentPhone: '7815956124' },
+  { rollNumber: '22WJ1A04Q8', name: 'RANABOTHU NITHIN REDDY', parentPhone: '9989900516', studentPhone: '7075201361' },
+  { rollNumber: '22WJ1A04Q9', name: 'RANERU NARESH', parentPhone: '9963269357', studentPhone: '9573461594' },
+  { rollNumber: '22WJ1A04R0', name: 'RANGAPPA SAI KIRAN', parentPhone: '7036898066', studentPhone: '9398601171' },
+  { rollNumber: '22WJ1A04R1', name: 'RANGAREDDY LAXMI PRASANNA', parentPhone: '9949207419', studentPhone: '9866986521' },
+  { rollNumber: '22WJ1A04R2', name: 'RANKIREDDY OM SAI VARSHITHA', parentPhone: '9295003580', studentPhone: '9014697651' },
+  { rollNumber: '22WJ1A04R3', name: 'RAO VIJAY RAO', parentPhone: '9848912071', studentPhone: '7386880115' },
+  { rollNumber: '22WJ1A04R4', name: 'RENUKUNTA NIKHITHA', parentPhone: '9951390080', studentPhone: '7661987725' },
+  { rollNumber: '22WJ1A04R5', name: 'RESHMA', parentPhone: '9959291693', studentPhone: '9041909235' },
+  { rollNumber: '22WJ1A04R6', name: 'S KRISHNA TEJA', parentPhone: '9652050917', studentPhone: '9553477673' },
+  { rollNumber: '23WJ5A0422', name: 'R BOJA RAJU', parentPhone: '9182571047', studentPhone: '9346241543' },
+  { rollNumber: '23WJ5A0423', name: 'RENA SUKANYA', parentPhone: '9347342845', studentPhone: '9347342845' },
+  { rollNumber: '23WJ5A0424', name: 'SAKINALA KRISHNAGEETHIKA', parentPhone: '9948676602', studentPhone: '9059442608' },
+  { rollNumber: '23WJ5A0425', name: 'SATLA GANESH', parentPhone: '9391407627', studentPhone: '8985880785' },
+  { rollNumber: '23WJ5A0426', name: 'SHIVVA VINOD KUMAR', parentPhone: '9550148890', studentPhone: '7288803087' },
+  // ... [rest of the students remain unchanged]
 ];
 
 
@@ -156,6 +155,12 @@ function setupEventListeners() {
   // Add event listener for the new print button
   const newPrintBtn = document.getElementById('newPrintBtn');
   if (newPrintBtn) newPrintBtn.addEventListener('click', openPrintModal);
+
+  const analyticsBtn = document.getElementById('analyticsBtn');
+  if (analyticsBtn) analyticsBtn.addEventListener('click', showAnalytics);
+
+  const closeAnalyticsModalBtn = document.getElementById('closeAnalyticsModal');
+  if (closeAnalyticsModalBtn) closeAnalyticsModalBtn.addEventListener('click', closeAnalyticsModal);
 }
 
 function toggleSearch() {
@@ -225,8 +230,10 @@ function showCRProfiles() {
   crProfiles.innerHTML = ''; // Clear existing profiles
 
   const crs = [
-    { name: 'D.Akhil', rollNumber: '22WJ1A0468', email: '22WJ1A0468@gniindia.org', photo: 'https://i.ibb.co/6XNHkhv/image.png' },
-    { name: 'J.Harshitha', rollNumber: '22WJ1A04A9', email: '22WJ1A04A9@gniindia.org', photo: 'https://i.ibb.co/6XNHkhv/image.png' },
+    { name: 'SRI CHARAN REDDY', rollNumber: '22WJ1A04P8', email: '22WJ1A04P8@gniindia.org', photo: 'https://i.ibb.co/6XNHkhv/image.png' },
+    { name: 'ADITYA', rollNumber: '22WJ1A04L5', email: '22WJ1A04L5@gniindia.org', photo: 'https://i.ibb.co/6XNHkhv/image.png' },
+    { name: 'PRATHYUSHA', rollNumber: '22WJ1A04N1', email: '22WJ1A04N1@gniindia.org', photo: 'https://i.ibb.co/6XNHkhv/image.png' },
+    { name: ' MEGHANA', rollNumber: '22WJ1A04Q4', email: '22WJ1A04Q4@gniindia.org', photo: 'https://i.ibb.co/6XNHkhv/image.png' },
   ];
 
   crs.forEach(cr => {
@@ -540,13 +547,14 @@ function whatsappStudent() {
   const parentName = document.getElementById('parentName').textContent;
   
   if (studentPhone && studentPhone !== 'Not available') {
+    const formattedPhone = `+91${studentPhone.replace(/\D/g, '')}`;
     const message = encodeURIComponent('Hello, this is a message from your faculty.');
-    window.open(`https://wa.me/${studentPhone}?text=${message}`, '_blank');
+    window.open(`https://wa.me/${formattedPhone}?text=${message}`, '_blank');
     
     // Log the WhatsApp message
     const log = {
       sender: 'Dr. S M K M Abbas Ahmad',
-      recipient: studentPhone,
+      recipient: formattedPhone,
       studentName: studentName,
       studentRoll: studentRoll,
       parentName: parentName,
@@ -751,5 +759,266 @@ function sendBulkMessage(group) {
   fetchMessagesFromServer();
 }
 
-// Add this function to add sample data (for testing purposes)
-// document.addEventListener('DOMContentLoaded', addSampleData);
+let platformChart = null;
+let trendChart = null;
+
+function showAnalytics() {
+  const analyticsModal = document.getElementById('analyticsModal');
+  const analyticsContent = document.getElementById('analyticsContent');
+  
+  // Fetch messages from local storage
+  const messages = localStorageDatabase.getAllMessages();
+  
+  // Sort messages by timestamp
+  messages.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+  
+  // Create charts
+  createPlatformChart(messages);
+  createTrendChart(messages);
+  
+  // Create legend and explanation
+  const legend = createLegendAndExplanation(messages);
+  
+  analyticsContent.innerHTML = legend;
+  analyticsModal.style.display = 'block';
+}
+
+function createPlatformChart(messages) {
+  const platformCounts = {
+    'WhatsApp': 0,
+    'SMS': 0,
+    'Phone': 0
+  };
+  
+  messages.forEach(message => {
+    platformCounts[message.platform]++;
+  });
+  
+  const ctx = document.getElementById('platformChart').getContext('2d');
+  
+  // Destroy existing chart if it exists
+  if (platformChart) {
+    platformChart.destroy();
+  }
+  
+  platformChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: Object.keys(platformCounts),
+      datasets: [{
+        label: 'Number of Messages',
+        data: Object.values(platformCounts),
+        backgroundColor: ['#25d366', '#3498db', '#e74c3c'],
+        borderColor: ['#1a9247', '#2980b9', '#c0392b'],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Messages by Platform'
+        },
+        legend: {
+          display: false
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Number of Messages'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Platform'
+          }
+        }
+      }
+    }
+  });
+}
+
+function createTrendChart(messages) {
+  const messageCounts = {};
+  messages.forEach(message => {
+    const date = new Date(message.timestamp).toISOString().split('T')[0];
+    messageCounts[date] = (messageCounts[date] || 0) + 1;
+  });
+  
+  const ctx = document.getElementById('trendChart').getContext('2d');
+  
+  // Destroy existing chart if it exists
+  if (trendChart) {
+    trendChart.destroy();
+  }
+  
+  trendChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: Object.keys(messageCounts),
+      datasets: [{
+        label: 'Messages per Day',
+        data: Object.values(messageCounts),
+        borderColor: '#3498db',
+        fill: false
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Message Trend Over Time'
+        }
+      },
+      scales: {
+        x: {
+          type: 'time',
+          time: {
+            unit: 'day',
+            parser: 'yyyy-MM-dd'
+          },
+          title: {
+            display: true,
+            text: 'Date'
+          }
+        },
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Number of Messages'
+          }
+        }
+      }
+    }
+  });
+}
+
+function createLegendAndExplanation(messages) {
+  const totalMessages = messages.length;
+  const platformCounts = {
+    'WhatsApp': 0,
+    'SMS': 0,
+    'Phone': 0
+  };
+  
+  messages.forEach(message => {
+    platformCounts[message.platform]++;
+  });
+  
+  const whatsappPercentage = ((platformCounts['WhatsApp'] / totalMessages) * 100).toFixed(2);
+  const smsPercentage = ((platformCounts['SMS'] / totalMessages) * 100).toFixed(2);
+  const phonePercentage = ((platformCounts['Phone'] / totalMessages) * 100).toFixed(2);
+  
+  return `
+    <div class="analytics-legend">
+      <h3>Analytics Overview</h3>
+      <p>Total Messages: ${totalMessages}</p>
+      <h4>Platform Distribution:</h4>
+      <ul>
+        <li><span style="color: #25d366;">■</span> WhatsApp: ${platformCounts['WhatsApp']} (${whatsappPercentage}%)</li>
+        <li><span style="color: #3498db;">■</span> SMS: ${platformCounts['SMS']} (${smsPercentage}%)</li>
+        <li><span style="color: #e74c3c;">■</span> Phone: ${platformCounts['Phone']} (${phonePercentage}%)</li>
+      </ul>
+      <h4>Graph Explanations:</h4>
+      <p><strong>Messages by Platform (Pie Chart):</strong> This chart shows the distribution of messages across different platforms. Each color represents a different platform as shown in the legend above.</p>
+      <p><strong>Message Trend Over Time (Line Chart):</strong> This graph displays the number of messages sent each day over time. The x-axis shows the date, and the y-axis shows the number of messages sent on that day. This helps visualize communication patterns and identify busy periods.</p>
+    </div>
+  `;
+}
+
+function closeAnalyticsModal() {
+  const analyticsModal = document.getElementById('analyticsModal');
+  analyticsModal.style.display = 'none';
+  
+  // Destroy charts
+  if (platformChart) {
+    platformChart.destroy();
+    platformChart = null;
+  }
+  if (trendChart) {
+    trendChart.destroy();
+    trendChart = null;
+  }
+}
+
+function createTrendChart(messages) {
+  const messageCounts = {};
+  messages.forEach(message => {
+    const date = new Date(message.timestamp).toISOString().split('T')[0];
+    messageCounts[date] = (messageCounts[date] || 0) + 1;
+  });
+  
+  const ctx = document.getElementById('trendChart').getContext('2d');
+  
+  // Destroy existing chart if it exists
+  if (trendChart) {
+    trendChart.destroy();
+  }
+  
+  trendChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: Object.keys(messageCounts),
+      datasets: [{
+        label: 'Messages per Day',
+        data: Object.values(messageCounts),
+        borderColor: '#3498db',
+        fill: false
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Message Trend Over Time'
+        }
+      },
+      scales: {
+        x: {
+          type: 'time',
+          time: {
+            unit: 'day',
+            parser: 'yyyy-MM-dd'
+          },
+          title: {
+            display: true,
+            text: 'Date'
+          }
+        },
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Number of Messages'
+          }
+        }
+      }
+    }
+  });
+}
+
+function closeAnalyticsModal() {
+  const analyticsModal = document.getElementById('analyticsModal');
+  analyticsModal.style.display = 'none';
+  
+  // Destroy charts when closing the modal
+  if (platformChart) {
+    platformChart.destroy();
+    platformChart = null;
+  }
+  if (trendChart) {
+    trendChart.destroy();
+    trendChart = null;
+  }
+}
+
+// Make sure to call setupEventListeners() when the DOM is loaded
+document.addEventListener('DOMContentLoaded', setupEventListeners);

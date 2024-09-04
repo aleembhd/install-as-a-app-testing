@@ -4,12 +4,14 @@
     <title>StudentConnect - Enhanced Messaging System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
     <style>
         /* Additional styles remain the same */
     </style>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 </head>
 
 <body>
@@ -124,6 +126,22 @@
         <!-- Add this for the print preview -->
         <div id="printPreview" class="print-preview">
           <div id="printContent"></div>
+        </div>
+
+        <!-- Add this button near your other buttons -->
+        <button id="analyticsBtn" class="analytics-btn">Analytics</button>
+
+        <!-- Add this modal for analytics -->
+        <div id="analyticsModal" class="modal">
+          <div class="modal-content">
+            <h2>Message Analytics</h2>
+            <div class="charts-container">
+              <canvas id="platformChart"></canvas>
+              <canvas id="trendChart"></canvas>
+            </div>
+            <div id="analyticsContent"></div>
+            <button id="closeAnalyticsModal">Close</button>
+          </div>
         </div>
     </div>
     <script src="script.js"></script>
